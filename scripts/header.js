@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN/content/header.json')
+    fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN@latest/content/header.json')
         .then(response => response.json())
         .then(headerData => {
             const header = document.querySelector('header');
