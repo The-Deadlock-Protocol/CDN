@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('content/footer.json')
+    fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN/content/footer.json')
         .then(response => response.json())
         .then(footerData => {
             const footer = document.querySelector('footer');
