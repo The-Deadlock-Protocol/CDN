@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     Promise.all([
         fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN@latest/content/content-header.json').then(response => response.json()),
-        fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN@latest/content/content-data.json').then(response => response.json()),
-        fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN@latest/content/content-tag.json').then(response => response.json()),
-        fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN@latest/content/content-author.json').then(response => response.json())
+        fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN/content/content-data.json').then(response => response.json()),
+        fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN/content/content-tag.json').then(response => response.json()),
+        fetch('https://cdn.jsdelivr.net/gh/The-Deadlock-Protocol/CDN/content/content-author.json').then(response => response.json())
     ])
     .then(([headersData, contentData, tagsData, authorsData]) => {
         const sortedContent = sortContentByDate(contentData);
